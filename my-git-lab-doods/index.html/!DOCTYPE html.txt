@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-Impact Black and Red Site</title>
+    
+    <style>
+        /* Define the color palette */
+        :root {
+            --color-primary: #000000;      /* Black background */
+            --color-secondary: #FF0000;    /* Bright Red for accents/headers */
+            --color-text-light: #f0f0f0;   /* Light text for contrast */
+            --color-gold: #FFD700;         /* Gold for buttons/calls to action */
+        }
+        
+        /* GENERAL STYLES */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3 {
+            color: var(--color-secondary); /* Red headers */
+            border-bottom: 2px solid var(--color-gold); /* Gold separator */
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        a {
+            color: var(--color-secondary); /* Red links */
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: var(--color-gold);
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            background-color: #1a1a1a; /* Slightly lighter black for contrast */
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        nav a {
+            color: var(--color-text-light);
+            margin: 0 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--color-gold);
+            text-decoration: none;
+        }
+
+        /* BUTTONS (Gold) */
+        .btn {
+            display: inline-block;
+            background-color: var(--color-gold);
+            color: var(--color-primary); /* Black text on gold button */
+            padding: 10px 20px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        
+        .btn:hover {
+            background-color: #e6c200; /* Darker gold on hover */
+            text-decoration: none;
+            transform: scale(1.05);
+        }
+
+        /* SECTION STYLING */
+        section {
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #111111; /* Darker black background for content blocks */
+            padding: 20px;
+            margin-top: 15px;
+            border-left: 5px solid var(--color-secondary); /* Red accent bar */
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            border-top: 1px solid var(--color-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>THE REDLINE INITIATIVE</h1>
+        <p>Innovation at the intersection of technology and design.</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>
+                We deliver high-quality, impactful digital solutions. Our commitment is to excellence, driven by cutting-edge technology and a bold design philosophy.
+            </p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </section>
+
+        <section id="services">
+            <h2>Our Core Services</h2>
+            
+            <div class="card">
+                <h3>Digital Strategy</h3>
+                <p>Developing robust roadmaps to achieve your business objectives in the digital sphere.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <div class="card">
+                <h3>Bespoke Web Development</h3>
+                <p>Creating custom, scalable, and secure web applications tailored to your exact needs.</p>
+                <a href="#" class="btn">View Portfolio</a>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Ready to Begin?</h2>
+            <p>Reach out to us today to start your next high-impact project. We're eager to hear your vision.</p>
+            <a href="mailto:contact@redline.com" class="btn">Contact Us Now</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Designed with High-Contrast | &copy; 2025 Redline Initiative</p>
+    </footer>
+
+</body>
+</html>
